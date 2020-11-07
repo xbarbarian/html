@@ -1,4 +1,9 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Sans-Serif, serif;
     margin: 0;
@@ -11,40 +16,15 @@ body, html {
     height: 100%;
 }
 
-.content {
+.container {
     flex: 1 0 auto;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 p {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
-}
-
-header {
-    display: flex;
-    justify-content: start;
-}
-.logo img{
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-}
-
-.main-nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
-
-.main-nav li a {
-    display: block;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
 }
 
 h1 {
@@ -76,6 +56,59 @@ input, textarea {
     opacity: 0.4;
 }
 
+header {
+    display: flex;
+    justify-content: start;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.main-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.first-block-slogan{
+
+}
+
+.first-block-slogan-h1 {
+    width: 510px;
+}
+
+.first-block-slogan-p {
+    width: 425px;
+}
+
+.second-block {
+    align-items: center;
+    align-content: center;
+}
+
+.second-block-columns {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+}
+.second-block-column-1 {
+    width: 359px;
+    text-align: center;
+}
+
 .button {
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
@@ -86,12 +119,6 @@ input, textarea {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
-}
-
-footer {
-    flex-shrink: 0;
-    padding: 20px;
-
 }
 
 .two-in-one {
@@ -136,4 +163,27 @@ footer {
     display: flex;
     justify-content: center;
 
+}
+
+footer {
+    flex-shrink: 0;
+    padding: 20px;
+
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-top {
+    width: 495px;
+}
+.footer-top h3 {
+    width: 340px;
+    text-align: left;
+}
+
+.footer-bottom ul {
+    display: flex;
+    justify-content: space-between;
 }
